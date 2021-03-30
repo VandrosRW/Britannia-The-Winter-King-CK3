@@ -4,5 +4,5 @@ tags={
 	"History"
 }
 name="The Winter King"
-supported_version="1.2.2"
-path="C:/Users/Darren/Documents/Paradox Interactive/Crusader Kings III/mod/Britannia"
+supported_version="1.3.1"
+path="mod/Britannia"

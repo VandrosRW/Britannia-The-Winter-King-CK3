@@ -4,4 +4,4 @@ tags={
 	"History"
 }
 name="The Winter King"
-supported_version="1.2.2"
+supported_version="1.3.1"
