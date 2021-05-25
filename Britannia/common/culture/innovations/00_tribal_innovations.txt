@@ -23,6 +23,7 @@
 @nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
 @nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
+@innovation_roman_restoration = "gfx/interface/icons/culture_innovations/innovation_roman_restoration.dds"
 
 @camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
@@ -95,6 +96,14 @@ innovation_quilted_armor = {
 	group = culture_group_military
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_02
+	potential = {
+		OR = {
+			#Celtic
+		this = culture:brythonic
+		
+			
+		}
+	}
 
 	unlock_maa = armored_footmen
 
@@ -102,6 +111,31 @@ innovation_quilted_armor = {
 	flag = tribal_era_regular
 }
 
+innovation_roman_restoration = {
+	group = culture_group_military
+	culture_era = culture_era_tribal
+	icon = @weapons_and_armor_02
+
+	potential = {
+		OR = {
+			#Latin
+		this = culture:roman
+		this = culture:romanobritish
+			
+		}
+	}
+
+	modifier = {
+		knight_effectiveness_mult = 0.1
+		knight_limit = 2
+	}
+
+	unlock_maa = Limitanei
+	unlock_maa = Comitatenses
+
+	flag = global_regular
+	flag = tribal_era_regular
+}
 innovation_development_01 = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
